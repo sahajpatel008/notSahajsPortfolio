@@ -1,7 +1,7 @@
 <app-slider></app-slider>
 <mat-slide-toggle></mat-slide-toggle>
 
-<mat-sidenav-container class="sidenav-container">
+<!-- <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #sidenav mode="side" class="sidenav" [fixedInViewport]="true" fixedTopGap="64">
     <mat-nav-list>
       <a mat-list-item href="#about">About</a>
@@ -18,8 +18,17 @@
       <span>My Portfolio</span>
     </mat-toolbar>
 
-    <div class="content">
+    <div class="content"> -->
       <!-- Your main content goes here -->
-    </div>
+    <!-- </div>
   </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
+
+
+<mat-toolbar color="primary" class="top-navbar">
+  <span>My Portfolio</span>
+  <span class="spacer"></span>
+  <a mat-button href="#about">About</a>
+  <a mat-button href="#projects">Projects</a>
+  <a mat-button href="#contact">Contact</a>
+</mat-toolbar>

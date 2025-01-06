@@ -4,7 +4,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-.sidenav-container {
+/* .sidenav-container {
     height: 100vh;
   }
   
@@ -16,6 +16,23 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     position: sticky;
     top: 0;
     z-index: 2;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+   */
+
+   .top-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .spacer {
+    flex: 1;
   }
   
   .content {
