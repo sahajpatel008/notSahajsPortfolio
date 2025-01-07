@@ -1,0 +1,50 @@
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .photo-section {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .description-section {
+    flex: 2 1 400px;
+    text-align: left;
+  }
+  
+  .description-section h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .description-section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  mat-chip-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  mat-chip {
+    font-size: 1rem;
+  }
+  
