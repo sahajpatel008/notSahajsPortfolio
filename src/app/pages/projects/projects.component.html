@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<div class="projects-container">
+    <h1>My Projects</h1>
+    <div class="project-card" *ngFor="let project of projects">
+      <h2>{{ project.name }}</h2>
+      <p>{{ project.description }}</p>
+      <a mat-button color="primary" href="{{ project.githubLink }}" target="_blank">
+        <mat-icon>code</mat-icon> View on GitHub
+      </a>
+    </div>
+  </div>
+  
