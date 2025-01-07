@@ -8,19 +8,28 @@ import { Component } from '@angular/core';
 export class ProjectsComponent {
   projects = [
     {
-      name: 'Portfolio Website',
-      description: 'A personal portfolio website built with Angular and Angular Material.',
-      githubLink: 'https://github.com/yourusername/portfolio-website'
+      name: 'mySchedules',
+      description: 'Web-app to streamline the process of shift assigning and picking among part time employees and managers.\
+      Built using Angular, Django & PostgresQL',
+      githubLink: 'https://github.com/sahajpatel008/mySchedules'
     },
     {
-      name: 'Weather App',
-      description: 'A weather forecasting app using Angular and OpenWeatherMap API.',
-      githubLink: 'https://github.com/yourusername/weather-app'
+      name: 'Conversational AI Chatbot',
+      description: 'A conversational AI chatbot using Google-assisted NLP engine: Dialogflow to process natural language queries \
+      pertaining to different types of diamonds and thereby generating filtering parameters to query out diamonds having these mentioned properties.',
+      githubLink: 'https://github.com/SheshangPatel/BitBombers_Mined'
     },
     {
-      name: 'Chat Application',
-      description: 'A real-time chat application built with Angular and Firebase.',
-      githubLink: 'https://github.com/yourusername/chat-application'
+      name: 'codeTracker',
+      description: 'Desktop app that tracks your IDE activity and updates it on your Google Calendar. \
+      The project will use Google OAuth Client ID to commit event details of your coding activity .',
+      githubLink: 'https://github.com/sahajpatel008/codeTracker'
+    },
+    {
+      name: ' Typing Speed Test',
+      description: 'Desktop app made with Tkinter. Measures your typing speed from a fixed pool of randomly picked common words\
+       and displays your typing progress.',
+      githubLink: 'https://github.com/sahajpatel008/Typing-Speed-Test'
     }
   ];
 }
