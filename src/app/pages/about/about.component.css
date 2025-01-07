@@ -38,13 +38,23 @@
     line-height: 1.6;
   }
   
-  mat-chip-list {
+  mat-chip-listbox {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    outline: none; /* Prevents outline when listbox is focused */
   }
   
   mat-chip {
     font-size: 1rem;
+    cursor: pointer; /* Indicates chips are interactive */
+    transition: background-color 0.2s ease;
   }
   
+  mat-chip[selected] {
+    font-weight: bold; /* Highlight selected chips */
+  }
+  
+  mat-chip:focus {
+    outline: 2px solid #3f51b5; /* Adds a visible focus indicator */
+  }

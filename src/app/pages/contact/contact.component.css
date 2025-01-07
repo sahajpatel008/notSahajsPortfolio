@@ -1,0 +1,40 @@
+.contact-container {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-direction: column; /* Arrange links vertically */
+    gap: 15px; /* Add space between links */
+    align-items: center; /* Center-align the links */
+  }
+  
+  .contact-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+
+  .text-blue {
+  color: #0077b5; /* LinkedIn's blue color */
+}
+
+.text-blue mat-icon {
+  color: #0077b5; /* Ensures the icon matches the text color */
+}
