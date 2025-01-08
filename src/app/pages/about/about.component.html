@@ -75,14 +75,6 @@
         <li *ngFor="let responsibility of experience.responsibilities">{{ responsibility }}</li>
       </ul>
     </div>
-
-    <!-- <h2>Hobbies & Interests</h2>
-    <mat-chip-listbox aria-label="Hobbies and Interests">
-      <mat-chip color="primary" selected>Programming</mat-chip>
-      <mat-chip color="accent" selected>Baking</mat-chip>
-      <mat-chip color="warn" selected>Football</mat-chip>
-      <mat-chip color="primary" selected>Travel</mat-chip>
-    </mat-chip-listbox> -->
   </div>
 
   <!-- Education Section -->
@@ -98,4 +90,20 @@
       <span class="education-location">{{ edu.location }}</span>
       <p class="education-gpa">GPA: {{ edu.gpa }}</p>
     </div>
-</div>
+
+
+    <!-- Hobbies & Interests Section -->
+    <div class="hobbies-interests-section">
+      <h2>Hobbies & Interests</h2>
+      <mat-chip-set aria-label="Hobbies and Interests">
+        <mat-chip color="primary" class="hobby-chip">
+          <span class="material-icons">cake</span> Baking
+        </mat-chip>
+        <mat-chip color="accent" class="hobby-chip">
+          <span class="material-icons">sports_soccer</span> Football
+        </mat-chip>
+        <mat-chip color="warn" class="hobby-chip">
+          <span class="material-icons">beach_access</span> Travel
+        </mat-chip>
+      </mat-chip-set>
+    </div>

@@ -208,3 +208,30 @@ mat-chip {
   font-size: 1rem;
   padding: 8px 16px;
 }
+
+/* Ensure the chip items display properly */
+mat-chip-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;  /* Space between chips */
+}
+
+/* Align the icon and text properly inside the chip */
+.hobby-chip {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  padding-left: 10px;  /* Adds space on the left */
+  padding-top: 5px;
+}
+
+/* Style the material icons */
+.hobby-chip .material-icons {
+  font-size: 18px;    /* Adjust icon size */
+  margin-right: 8px;   /* Adds space between the icon and text */
+  padding-top: 4px;     /* Adds top padding for the icon */
+}
+
+/* Optional: Adjust font size of text */
+.hobby-chip {
+  font-size: 14px;  /* Adjust text size */
+}
