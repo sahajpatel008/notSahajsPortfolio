@@ -69,20 +69,32 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 20px;
-  /* Space below the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.skills-category {
+  margin-bottom: 30px; /* Space between skill categories */
+}
+
+.skills-category h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Space below category heading */
 }
 
 .skills-list {
-  list-style-type: disc;
-  padding-left: 20px;
-  font-size: 1rem;
-  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Space between chips */
 }
 
-.skills-list li {
-  margin-bottom: 10px;
-  /* Space between skill items */
+mat-chip {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
+
+mat-chip mat-icon {
+  margin-right: 5px; /* Space between the icon and the text */
 }
 
 
