@@ -65,31 +65,14 @@
   <div class="work-experience-container">
     <h2>Work Experience</h2>
 
-    <!-- Job 1 -->
-    <div class="work-experience-item">
+    <div *ngFor="let experience of workExperiences" class="work-experience-item">
       <h3>
-        Software Engineer
-        <span class="job-dates">January 2021 - December 2023</span>
+        {{ experience.title }}
+        <span class="job-dates">{{ experience.dates }}</span>
       </h3>
-      <p class="company-name">Tech Company Inc.</p>
+      <p class="company-name">{{ experience.company }}</p>
       <ul>
-        <li>Developed and maintained web applications using Angular and TypeScript.</li>
-        <li>Collaborated with cross-functional teams to design scalable solutions.</li>
-        <li>Optimized application performance, reducing load times by 30%.</li>
-      </ul>
-    </div>
-
-    <!-- Job 2 -->
-    <div class="work-experience-item">
-      <h3>
-        Front-End Developer
-        <span class="job-dates">June 2019 - December 2020</span>
-      </h3>
-      <p class="company-name">Creative Web Studio</p>
-      <ul>
-        <li>Designed responsive user interfaces with HTML, CSS, and Angular Material.</li>
-        <li>Implemented dynamic features to improve user engagement.</li>
-        <li>Ensured compatibility across browsers and devices.</li>
+        <li *ngFor="let responsibility of experience.responsibilities">{{ responsibility }}</li>
       </ul>
     </div>
 
