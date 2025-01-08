@@ -1,60 +1,112 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* About Container */
 .about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-  }
-  
-  .photo-section {
-    flex: 1 1 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .description-section {
-    flex: 2 1 400px;
-    text-align: left;
-  }
-  
-  .description-section h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .description-section p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  mat-chip-listbox {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    outline: none; /* Prevents outline when listbox is focused */
-  }
-  
-  mat-chip {
-    font-size: 1rem;
-    cursor: pointer; /* Indicates chips are interactive */
-    transition: background-color 0.2s ease;
-  }
-  
-  mat-chip[selected] {
-    font-weight: bold; /* Highlight selected chips */
-  }
-  
-  mat-chip:focus {
-    outline: 2px solid #3f51b5; /* Adds a visible focus indicator */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 30px; /* Increased space between sections for clarity */
+}
+
+/* Profile Photo Section */
+.photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Section */
+.description-section {
+  width: 100%;
+  max-width: 800px; /* Ensures it doesn't stretch too wide */
+  text-align: left;
+}
+
+.description-section h1,
+.description-section h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.description-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px; /* Extra spacing after paragraph */
+}
+
+/* Work Experience Section */
+.work-experience-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+  margin-top: 0; /* Remove extra margin */
+}
+
+.work-experience-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Work Experience Items */
+.work-experience-item {
+  margin-bottom: 30px; /* Space between jobs */
+}
+
+.work-experience-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-experience-item ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.job-dates {
+  font-size: 1rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.company-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Hobbies & Interests Chips */
+mat-chip-listbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+mat-chip {
+  font-size: 1rem;
+  padding: 8px 16px;
+}
