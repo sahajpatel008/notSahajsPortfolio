@@ -89,24 +89,13 @@
   <div class="education-container">
     <h2>Education</h2>
 
-    <!-- School 1 -->
-    <div class="education-item">
+    <div *ngFor="let edu of education" class="education-item">
       <h3>
-        XYZ High School
-        <span class="education-dates">August 2014 - June 2018</span>
+        {{ edu.school }}
+        <span class="education-dates">{{ edu.dates }}</span>
       </h3>
-      <h4 class="major">Science</h4>
-      <span class="education-location">City, Country</span>
+      <h4 class="major">{{ edu.major }}</h4>
+      <span class="education-location">{{ edu.location }}</span>
+      <p class="education-gpa">GPA: {{ edu.gpa }}</p>
     </div>
-
-    <!-- School 2 -->
-    <div class="education-item">
-      <h3>
-        ABC University
-        <span class="education-dates">August 2018 - May 2022</span>
-      </h3>
-      <h4 class="major">Computer Science</h4>
-      <span class="education-location">City, Country</span>
-    </div>
-  </div>
 </div>

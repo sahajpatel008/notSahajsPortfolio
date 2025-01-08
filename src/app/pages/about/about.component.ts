@@ -42,4 +42,21 @@ export class AboutComponent {
       ]
     }
   ];
+
+  education = [
+    {
+      school: 'Santa Clara University',
+      dates: 'August 2024 - Present',
+      major: 'MS - Computer Science & Engineering',
+      location: 'Santa Clara, US',
+      gpa: '3.85'
+    },
+    {
+      school: 'Nirma University',
+      dates: 'September 2018 - May 2022',
+      major: 'B.Tech - Computer Science & Engineering',
+      location: 'Ahmedabad, India',
+      gpa: '3.92'
+    }
+  ];
 }

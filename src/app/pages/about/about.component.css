@@ -192,6 +192,11 @@ mat-chip mat-icon {
   margin-top: 2px; /* Reduced margin above the major */
   margin-bottom: 2px; /* Reduced margin below the major */
 }
+
+.education-gpa {
+  font-weight: bold;
+  margin-top: 5px; /* Space between major and GPA */
+}
 /* Hobbies & Interests Chips */
 mat-chip-listbox {
   display: flex;
