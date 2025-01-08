@@ -16,7 +16,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  gap: 30px; /* Increased space between sections for clarity */
+  gap: 30px;
+  /* Increased space between sections for clarity */
 }
 
 /* Profile Photo Section */
@@ -37,7 +38,8 @@ body {
 /* Description Section */
 .description-section {
   width: 100%;
-  max-width: 800px; /* Ensures it doesn't stretch too wide */
+  max-width: 800px;
+  /* Ensures it doesn't stretch too wide */
   text-align: left;
 }
 
@@ -52,27 +54,60 @@ body {
 .description-section p {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 20px; /* Extra spacing after paragraph */
+  margin-bottom: 20px;
+  /* Extra spacing after paragraph */
 }
+
+/* Skills Section */
+.skills-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.skills-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  /* Space below the heading */
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  /* Space between skill items */
+}
+
+
 
 /* Work Experience Section */
 .work-experience-container {
   width: 100%;
   max-width: 800px;
   text-align: left;
-  margin-top: 0; /* Remove extra margin */
+  margin-top: 0;
+  /* Remove extra margin */
 }
 
 .work-experience-container h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 20px; /* Space below the heading */
+  margin-bottom: 20px;
+  /* Space below the heading */
 }
 
 /* Work Experience Items */
 .work-experience-item {
-  margin-bottom: 30px; /* Space between jobs */
+  margin-bottom: 30px;
+  /* Space between jobs */
 }
 
 .work-experience-item h3 {
@@ -99,6 +134,52 @@ body {
   margin-bottom: 10px;
 }
 
+/* Education Section */
+.education-container {
+  width: 100%;
+  max-width: 800px;
+  text-align: left;
+}
+
+.education-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+.education-item {
+  margin-bottom: 20px; /* Space between schools */
+}
+
+.education-item h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px; /* Reduced space below the school name */
+}
+
+.education-dates {
+  font-size: 1rem;
+  color: #555;
+  font-weight: normal;
+}
+
+.education-location {
+  font-size: 1rem;
+  color: #555;
+  font-weight: normal;
+  display: block;
+  margin-top: 5px;
+}
+
+.major {
+  font-size: 1.2rem;
+  font-weight: 400; /* Lighter weight */
+  margin-top: 2px; /* Reduced margin above the major */
+  margin-bottom: 2px; /* Reduced margin below the major */
+}
 /* Hobbies & Interests Chips */
 mat-chip-listbox {
   display: flex;
