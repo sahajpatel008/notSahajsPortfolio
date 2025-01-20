@@ -53,7 +53,7 @@ export class AboutComponent {
     },
     {
       school: 'Nirma University',
-      dates: 'September 2018 - May 2022',
+      dates: 'September 2020 - June 2024',
       major: 'B.Tech - Computer Science & Engineering',
       location: 'Ahmedabad, India',
       gpa: '3.92'
