@@ -34,6 +34,25 @@
     font-size: 1rem;
     line-height: 1.6;
   }
+
+  .tech-stack {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .highlights-list {
+    margin: 15px 0;
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+
+  .highlights-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
   
   .project-card a {
     display: inline-flex;

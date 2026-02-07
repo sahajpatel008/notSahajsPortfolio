@@ -41,6 +41,7 @@ body {
   max-width: 800px;
   /* Ensures it doesn't stretch too wide */
   text-align: left;
+  margin: 0 auto;
 }
 
 .description-section h1,
@@ -63,6 +64,7 @@ body {
   width: 100%;
   max-width: 800px;
   text-align: left;
+  margin: 0 auto;
 }
 
 .skills-container h2 {
@@ -104,8 +106,8 @@ mat-chip mat-icon {
   width: 100%;
   max-width: 800px;
   text-align: left;
-  margin-top: 0;
-  /* Remove extra margin */
+  margin: 0 auto;
+  /* Center the container */
 }
 
 .work-experience-container h2 {
@@ -150,6 +152,7 @@ mat-chip mat-icon {
 .education-container {
   width: 100%;
   max-width: 800px;
+  margin: 0 auto;
   text-align: left;
 }
 
