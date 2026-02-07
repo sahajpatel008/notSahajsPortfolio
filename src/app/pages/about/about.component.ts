@@ -8,6 +8,22 @@ import { Component } from '@angular/core';
 export class AboutComponent {
   workExperiences = [
     {
+      title: 'Software Engineer Intern',
+      company: 'Tenex.AI',
+      dates: 'June 2025 - Present',
+      responsibilities: [
+        'Architected the "Argus" v1 prototype, developing a Chrome extension to capture SOC analyst investigations and a Go proxy server to bypass browser sandbox limitations, enabling data collection for automated playbook generation.',
+        
+        'Containerized the Go server using Docker and wrote shell scripts to streamline distribution and deployment to Security Operations Center (SOC) analyst machines, facilitating rapid testing and feedback.',
+        
+        'Advanced the product to v2 by designing and implementing new gRPC endpoints within the production microservice architecture; modified Protobuf definitions and developed business logic in Go for a core recordingservice.',
+        
+        'Authored SQL migrations and leveraged sqlc to generate type-safe Go code for database operations, and refactored storage logic to improve modularity and system maintainability.',
+        
+        'Technologies: Go, Typescript, Next.js, gRPC, Protobuf, Docker, PostgreSQL, Git, Google Chrome Extensions'
+      ]
+    },
+    {
       title: 'Software Developer Intern',
       company: 'D360° Technologies Inc',
       dates: 'January 2024 - May 2024',
