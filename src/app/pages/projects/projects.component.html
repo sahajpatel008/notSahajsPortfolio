@@ -8,8 +8,8 @@
         <span *ngIf="project.date">{{ project.date }}</span>
       </p>
       <p *ngIf="project.description">{{ project.description }}</p>
-      <a mat-button color="primary" href="{{ project.githubLink }}" target="_blank" *ngIf="project.githubLink">
-        <mat-icon>code</mat-icon> View on GitHub
+      <a mat-button color="primary" href="{{ project.githubLink }}" target="_blank" *ngIf="project.githubLink" class="github-link">
+        <i class="fab fa-github"></i> GitHub
       </a>
     </div>
   </div>

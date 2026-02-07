@@ -60,4 +60,12 @@
     gap: 8px;
     text-decoration: none;
   }
-  
+
+  .github-link i {
+    font-size: 1.2rem;
+    transition: transform 0.2s ease;
+  }
+
+  .github-link:hover i {
+    transform: scale(1.15);
+  }
